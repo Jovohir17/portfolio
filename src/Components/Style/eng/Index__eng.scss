@@ -191,16 +191,22 @@ a{
         justify-content: center;
         align-items: center;
         gap: 2.372px;
-        flex-shrink: 0;
         border-radius: 27.915px;
         background: linear-gradient(180deg, rgba(246, 247, 251, 0.10) 0%, rgba(233, 235, 240, 0.10) 100%);
         backdrop-filter: blur(6.978736400604248px);
+
+        transition: transform 0.5s ease;
 
         img {
           width: 97px;
           height: 94px;
 
         }
+      }
+
+      .telegram:hover{
+        transform: scale(1.1);
+        transition: all 0.5s ease;
       }
 
       .instagram {
@@ -218,6 +224,13 @@ a{
         border-radius: 27.915px;
         background: linear-gradient(180deg, rgba(246, 247, 251, 0.10) 0%, rgba(233, 235, 240, 0.10) 100%);
         backdrop-filter: blur(6.978736400604248px);
+        transition: all 0.5s ease;
+
+      }
+
+      .instagram:hover{
+        transform: scale(1.1);
+        transition: all 0.5s ease;
       }
     }
 
@@ -294,9 +307,36 @@ section {
     }
   }
 
-  .d-flexx {
+  .div1{
+    width: 520px;
+    height: 720px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: #F7BB67;
+    filter: blur(45px);
+    margin-left: 164px;
+    margin-top: 187px;
+  }
+
+  .div2{
+    width: 520px;
+    height: 520px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: #95A1AE;
+    filter: blur(45px);
+    margin-top: 187px;
+    margin-left: 79px;
+  }
+
+  /////////////////////////////////////////////////////////////////////////////////////
+
+  .d-flexx{
     display: flex;
     .card1 {
+      transition: transform 0.2s ease;
+      top: 1200px;
+      position: absolute;
       width: 520px;
       height: 720px;
       flex-shrink: 0;
@@ -341,20 +381,38 @@ section {
       .button__link{
         margin-left: 182px;
         margin-top: 14px;
-      a{
-        button {
+
+        .dd1{
+
           width: 139.321px;
-          height: 58.626px;
+          height: 57.645px;
           flex-shrink: 0;
           border-radius: 10px;
           background: var(--white, #FFF);
-          border: 0;
-          color: #F7BB67;
-          font-family: Akira;
+          color: #800A7A;
+          font-family: 'Akira';
           font-size: 12px;
           font-style: normal;
           font-weight: 800;
           line-height: 26px; /* 216.667% */
+          border: 0;
+        }
+      a{
+        button {
+          width: 139.321px;
+          height: 57.645px;
+          flex-shrink: 0;
+          border-radius: 10px;
+          background: var(--white, #FFF);
+          color: #800A7A;
+          font-family: 'Akira';
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 800;
+          line-height: 26px; /* 216.667% */
+          border: 0;
+          margin-top: -58px;
+          position: absolute;
         }
       }
       }
@@ -367,14 +425,47 @@ section {
       }
     }
 
+    .card1:hover{
+      border-radius: 50px;
+      transform: scale(1.1);
+      transition: all 0.5s ease;
+
+
+      .dd1{
+        border-radius: 15px;
+        background: rgba(128, 10, 122, 0.50);
+        filter: blur(15px);
+        transition: all 0.8s ease;
+
+      }
+    }
+
+    .button__link:hover{
+      border-radius: 50px;
+      transition: all 0.5s ease;
+
+      .dd1{
+        border-radius: 15px;
+        background: rgba(128, 10, 122, 0.50);
+        filter: blur(15px);
+        transition: all 0.8s ease;
+
+      }
+
+    }
+
+
 
     .card2 {
+      transition: transform 0.2s ease;
       width: 520px;
       height: 520px;
       flex-shrink: 0;
       border-radius: 50px;
       background: #95A1AE;
-      margin-left: 79px;
+      position: absolute;
+      top: 1200px;
+      left: 920px;
       margin-top: 187px;
 
 
@@ -421,6 +512,21 @@ section {
     .button__link{
       margin-left: 182px;
       margin-top: 31px;
+
+      .dd1{
+        width: 139.321px;
+        height: 57.645px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        background: var(--white, #FFF);
+        color: #800A7A;
+        font-family: 'Akira';
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 26px; /* 216.667% */
+        border: 0;
+      }
      a{
       button{
         width: 139.321px;
@@ -435,12 +541,54 @@ section {
         font-weight: 800;
         line-height: 26px; /* 216.667% */
         border: 0;
+        margin-top: -58px;
+        position: absolute;
       }
      }
     }
     }
 
+    .card2:hover{
+      border-radius: 50px;
+      transform: scale(1.1);
+      transition: all 0.5s ease;
+
+
+      .dd1{
+        border-radius: 15px;
+        background: rgba(128, 10, 122, 0.50);
+        filter: blur(15px);
+        transition: all 0.8s ease;
+
+      }
+    }
+
+      .div3{
+        width: 520px;
+        height: 520px;
+        flex-shrink: 0;
+        border-radius: 50px;
+        background: #95A1AE;
+        filter: blur(45px);
+        margin-left: 156px;
+        margin-top: 68px;
+      }
+
+    .div4{
+      width: 520px;
+      height: 720px;
+      flex-shrink: 0;
+      border-radius: 50px;
+      background: #8C67F7;
+      filter: blur(45px);
+      margin-left: 80px;
+      margin-top: -108px;
+    }
+
     .card3 {
+      position: absolute;
+      top: 2100px;
+      transition: transform 0.2s ease;
       width: 520px;
       height: 520px;
       flex-shrink: 0;
@@ -490,10 +638,25 @@ section {
         margin-left: 18px;
       }
 
-      .button__link {
+      .button__link{
         margin-left: 182px;
-        margin-top: 31px;
-        a {
+        margin-top: 14px;
+
+        .dd1{
+          width: 139.321px;
+          height: 57.645px;
+          flex-shrink: 0;
+          border-radius: 10px;
+          background: var(--white, #FFF);
+          color: #800A7A;
+          font-family: 'Akira';
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 800;
+          line-height: 26px; /* 216.667% */
+          border: 0;
+        }
+        a{
           button {
             width: 139.321px;
             height: 57.645px;
@@ -507,12 +670,34 @@ section {
             font-weight: 800;
             line-height: 26px; /* 216.667% */
             border: 0;
+            margin-top: -58px;
+            position: absolute;
           }
         }
       }
     }
 
+    .card3:hover{
+      border-radius: 50px;
+      transform: scale(1.1);
+      transition: all 0.5s ease;
+
+
+      .dd1{
+        border-radius: 15px;
+        background: rgba(128, 10, 122, 0.50);
+        filter: blur(15px);
+        transition: all 0.8s ease;
+
+      }
+    }
+
     .card4 {
+      position: absolute;
+      top: 2095px;
+      left: 920px;
+
+      transition: transform 0.2s ease;
       border-radius: 50px;
       background: #8C67F7;
       width: 520px;
@@ -553,10 +738,25 @@ section {
         line-height: 30px; /* 150% */
       }
 
-      .button__link {
+      .button__link{
         margin-left: 182px;
-        margin-top: 31px;
-        a {
+        margin-top: 14px;
+
+        .dd1{
+          width: 139.321px;
+          height: 57.645px;
+          flex-shrink: 0;
+          border-radius: 10px;
+          background: var(--white, #FFF);
+          color: #800A7A;
+          font-family: 'Akira';
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 800;
+          line-height: 26px; /* 216.667% */
+          border: 0;
+        }
+        a{
           button {
             width: 139.321px;
             height: 57.645px;
@@ -570,6 +770,8 @@ section {
             font-weight: 800;
             line-height: 26px; /* 216.667% */
             border: 0;
+            margin-top: -58px;
+            position: absolute;
           }
         }
       }
@@ -579,6 +781,21 @@ section {
         height: 450px;
         flex-shrink: 0;
         margin-left: 40px;
+      }
+    }
+
+    .card4:hover{
+      border-radius: 50px;
+      transform: scale(1.1);
+      transition: all 0.5s ease;
+
+
+      .dd1{
+        border-radius: 15px;
+        background: rgba(128, 10, 122, 0.50);
+        filter: blur(15px);
+        transition: all 0.8s ease;
+
       }
     }
 
@@ -623,13 +840,14 @@ section {
 footer{
   width: 1440px;
   height: 1121px;
+  background: #182538;
 
   h2{
     margin-left: 15px;
     margin-top: 91px;
     color: #95A1AE;
     text-align: center;
-    font-family: Akira ;
+    font-family: DrukCyr;
     font-size: 60px;
     font-style: normal;
     font-weight: 800;
@@ -655,12 +873,20 @@ footer{
       border-radius: 27.915px;
       background: linear-gradient(180deg, rgba(246, 247, 251, 0.10) 0%, rgba(233, 235, 240, 0.10) 100%);
       backdrop-filter: blur(6.978736400604248px);
+      transition: all 0.5s ease;
+
 
       img{
         width: 97px;
         height: 94px;
       }
     }
+
+    .telegram:hover{
+      transform: scale(1.1);
+      transition: all 0.5s ease;
+    }
+
 
     .instagram{
       display: flex;
@@ -675,7 +901,12 @@ footer{
       border-radius: 27.915px;
       background: linear-gradient(180deg, rgba(246, 247, 251, 0.10) 0%, rgba(233, 235, 240, 0.10) 100%);
       backdrop-filter: blur(6.978736400604248px);
+      transition: all 0.5s ease;
+    }
 
+    .instagram:hover{
+      transform: scale(1.1);
+      transition: all 0.5s ease;
     }
 
     .discord{
@@ -691,6 +922,13 @@ footer{
       border-radius: 27.915px;
       background: linear-gradient(180deg, rgba(246, 247, 251, 0.10) 0%, rgba(233, 235, 240, 0.10) 100%);
       backdrop-filter: blur(6.978736400604248px);
+      transition: all 0.5s ease;
+
+    }
+
+    .discord:hover{
+      transform: scale(1.1);
+      transition: all 0.5s ease;
     }
 
     .gmail{
@@ -706,6 +944,12 @@ footer{
       border-radius: 27.915px;
       background: linear-gradient(180deg, rgba(246, 247, 251, 0.10) 0%, rgba(233, 235, 240, 0.10) 100%);
       backdrop-filter: blur(6.978736400604248px);
+      transition: all 0.5s ease;
+    }
+
+    .gmail:hover{
+      transform: scale(1.1);
+      transition: all 0.5s ease;
     }
   }
 
@@ -733,4 +977,61 @@ footer{
       margin-left: -79px;
     }
   }
+}
+
+
+path {
+  stroke: #95A1AE;
+  stroke-width: 6;
+  stroke-dasharray: 6488;
+  stroke-dashoffset: 6488;
+  animation: draw 7s linear forwards;
+}
+
+.Coder{
+  position: relative;
+  animation: float 3s ease-in-out infinite; /* Настройка анимации */
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateX(10px); /* Изначальное и конечное положение */
+  }
+  50% {
+    transform: translateY(10px); /* Половина анимации - вверх */
+  }
+}
+
+.imggg{
+  position: page;
+  animation: float 3s ease-in-out infinite; /* Настройка анимации */
+  margin-left: 497px;
+  margin-top: -436px;
+}
+
+.pc{
+  position: relative;
+  animation: float 3s ease-in-out infinite; /* Настройка анимации */
+}
+
+.Code1{
+  position: relative;
+  animation: float 3.2s ease-in-out infinite; /* Настройка анимации */
+}
+
+.Code2{
+  position: relative;
+  animation: float 3.2s ease-in-out infinite; /* Настройка анимации */
+}
+
+.oblako1{
+  clip-path: polygon(-10% 25%, 100% 28%, 100% 70%, 40% 100%); /* Обрезать верхнюю часть изображения */
+  position: relative;
+  animation: float 3.5s ease-in-out infinite; /* Настройка анимации */
+}
+
+.programmer{
+  clip-path: polygon(-10% 25%, 100% 28%, 100% 70%, 40% 100%); /* Обрезать верхнюю часть изображения */
+  position: relative;
+  animation: float 3.5s ease-in-out infinite; /* Настройка анимации */
 }
