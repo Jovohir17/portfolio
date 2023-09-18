@@ -1030,6 +1030,12 @@ path {
   animation: float 3.5s ease-in-out infinite; /* Настройка анимации */
 }
 
+.oblako2{
+  clip-path: polygon(-10% 25%, 100% 28%, 100% 70%, 40% 100%); /* Обрезать верхнюю часть изображения */
+  position: relative;
+  animation: float 3.5s ease-in-out infinite; /* Настройка анимации */
+}
+
 .programmer{
   clip-path: polygon(-10% 25%, 100% 28%, 100% 70%, 40% 100%); /* Обрезать верхнюю часть изображения */
   position: relative;
